@@ -41,7 +41,7 @@ const databaseConfig: DatabaseConfig = {
         user: Env.get('DB_USER', 'postgres') as string,
         password: Env.get('DB_PASSWORD', '') as string,
         database: Env.get('DB_NAME', 'postgres') as string,
-        ssl: true,
+        ssl: { rejectUnauthorized: false },
       },
       healthCheck: true,
       debug: false,

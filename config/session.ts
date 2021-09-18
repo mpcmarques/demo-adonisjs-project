@@ -9,7 +9,7 @@ import Env from '@ioc:Adonis/Core/Env'
 import { SessionConfig } from '@ioc:Adonis/Addons/Session'
 
 const sessionConfig: SessionConfig = {
-  enabled: true,
+  enabled: false,
   /*
   |--------------------------------------------------------------------------
   | Driver
@@ -101,7 +101,7 @@ const sessionConfig: SessionConfig = {
   | must be defined inside `config/redis.ts` file as well.
   |
   */
-  redisConnection: 'local',
+  //redisConnection: 'local',
 }
 
 export default sessionConfig
